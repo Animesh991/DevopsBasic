@@ -26,7 +26,7 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'acr-test'
-    repository: 'jimstest.azurecr.io/jims-va-test'
+    repository: 'jimstest.azurecr.io/testrepo'
     command: 'buildAndPush'
     Dockerfile: '**/AzureDockerfile'
     tags: 'latest'
